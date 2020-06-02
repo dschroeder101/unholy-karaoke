@@ -46,7 +46,6 @@ class AudioPlayer extends React.Component {
         return (
             <div>
                 {audioSources}
-
                 <TrackSelector selectedTrack={this.state.selectedTrack} changeTrack={this.changeTrack} tracks={this.state.audioTracks}/>
                 <AudioPlayerControls playAudio={this.playAudio}/>
             </div>

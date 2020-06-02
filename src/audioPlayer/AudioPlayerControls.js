@@ -11,7 +11,6 @@ class AudioPlayerControls extends React.Component {
             <button className="audioPlayerBtn" onClick={this.props.playAudio}>
                 Play!
             </button>
-
             <button className="audioPlayerBtn">
                 Surprise me...
             </button>
