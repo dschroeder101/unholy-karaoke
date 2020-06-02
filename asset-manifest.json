@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/%7Bunholy-karaoke%7D/static/css/main.50c647c7.chunk.css",
+    "main.js": "/%7Bunholy-karaoke%7D/static/js/main.e79cd0ab.chunk.js",
+    "main.js.map": "/%7Bunholy-karaoke%7D/static/js/main.e79cd0ab.chunk.js.map",
+    "runtime-main.js": "/%7Bunholy-karaoke%7D/static/js/runtime-main.8b1d0649.js",
+    "runtime-main.js.map": "/%7Bunholy-karaoke%7D/static/js/runtime-main.8b1d0649.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/%7Bunholy-karaoke%7D/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.0580f526.chunk.js": "/%7Bunholy-karaoke%7D/static/js/2.0580f526.chunk.js",
+    "static/js/2.0580f526.chunk.js.map": "/%7Bunholy-karaoke%7D/static/js/2.0580f526.chunk.js.map",
+    "index.html": "/%7Bunholy-karaoke%7D/index.html",
+    "precache-manifest.a922b0ff336a4396106e460a735f3f97.js": "/%7Bunholy-karaoke%7D/precache-manifest.a922b0ff336a4396106e460a735f3f97.js",
+    "service-worker.js": "/%7Bunholy-karaoke%7D/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/%7Bunholy-karaoke%7D/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.50c647c7.chunk.css.map": "/%7Bunholy-karaoke%7D/static/css/main.50c647c7.chunk.css.map",
+    "static/js/2.0580f526.chunk.js.LICENSE.txt": "/%7Bunholy-karaoke%7D/static/js/2.0580f526.chunk.js.LICENSE.txt",
+    "static/media/bark.ogg": "/%7Bunholy-karaoke%7D/static/media/bark.65e13358.ogg",
+    "static/media/drip.ogg": "/%7Bunholy-karaoke%7D/static/media/drip.db87ef57.ogg",
+    "static/media/glass.ogg": "/%7Bunholy-karaoke%7D/static/media/glass.3f1c966c.ogg",
+    "static/media/logo.svg": "/%7Bunholy-karaoke%7D/static/media/logo.5d5d9eef.svg",
+    "static/media/sonar.ogg": "/%7Bunholy-karaoke%7D/static/media/sonar.e4b6d592.ogg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b1d0649.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.0580f526.chunk.js",
+    "static/css/main.50c647c7.chunk.css",
+    "static/js/main.e79cd0ab.chunk.js"
+  ]
+}
