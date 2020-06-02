@@ -5,10 +5,9 @@ class AudioTrack extends React.Component {
     constructor(props) {
         super(props);
 
-        this.image = props.image;
-        this.audioFile = props.audioFile;
-        this.artist = props.artist;
-        this.songTitle = props.songTitle;
+        this.image = this.props.image;
+        this.artist = this.props.artist;
+        this.trackName = this.props.trackName;
     }
 
     render() {
@@ -17,7 +16,7 @@ class AudioTrack extends React.Component {
                 <Col>
                     <Row>
                         <img src={this.image}></img>
-                        <h3>{this.songTitle} - {this.artist}</h3>
+                        <h3>{this.trackName} - {this.artist}</h3>
                     </Row>
                 </Col>
             </Container>

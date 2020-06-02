@@ -1,5 +1,6 @@
 import React from 'react';
 import AudioTrack from './AudioTrack'
+import { ListGroup } from 'react-bootstrap'
 
 class TrackSelector extends React.Component {
     constructor(props) {
@@ -7,24 +8,17 @@ class TrackSelector extends React.Component {
     }
 
     render() {
-        const btns = this.props.tracks.map(([trackName]) => {
+        const btns = this.props.tracks.map(([trackName, artist]) => {
             return (
-                <div>
-                    <label>
-                        <input
-                            type="radio"
-                            value="{track}"
-                            checked={this.props.selectedTrack === trackName}
-                            onChange={() => this.props.changeTrack(trackName)}
-                            />
-                            {trackName}
-                    </label>
-                </div>
+                <ListGroup.Item 
+                onClick={(e) => this.props.changeTrack(trackName)}
+                className={this.props.selectedTrack === trackName?"active":""}>
+                    <AudioTrack trackName={trackName} artist={artist} />
+                </ListGroup.Item>
             );
         });
-        return <form>{btns}</form>
+        return <ListGroup>{btns}</ListGroup>
     }
-
 }
 
 export default TrackSelector;

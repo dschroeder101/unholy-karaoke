@@ -4,6 +4,7 @@ import Drip from './audio/drip.ogg';
 import Glass from './audio/glass.ogg';
 import Sonar from './audio/sonar.ogg';
 import TrackSelector from './TrackSelector'
+import AudioPlayerControls from './AudioPlayerControls'
 
 class AudioPlayer extends React.Component {
     constructor(props) {
@@ -11,12 +12,12 @@ class AudioPlayer extends React.Component {
 
         this.state = {
             audioTracks: [
-                ["bark", "artist1", Bark],
-                ["drip", "artist2", Drip],
-                ["glass", "artist3", Glass],
-                ["sonar", "artist4", Sonar]
+                ["Thunderstruck", "AC/DC", Bark],
+                ["Daughter", "Pearl Jam", Drip],
+                ["How You Remind Me", "Nickelback", Glass],
+                ["Billie Jean", "Michael Jackson", Sonar]
             ],
-            selectedTrack: "bark"
+            selectedTrack: "Thunderstruck"
         };
 
         this.playAudio = () => {
@@ -29,13 +30,12 @@ class AudioPlayer extends React.Component {
             this.setState({
                 selectedTrack: track
             });
-        }
-        
+        }   
     }
 
     render() {
         const audioSources = this.state.audioTracks.map(track => {
-            const [trackName, artist, file] = track;
+            const [trackName, , file] = track;
             return (
                 <audio ref={song => { this[trackName] = song; }}>
                     <source src={file} type="audio/ogg"/>
@@ -48,10 +48,7 @@ class AudioPlayer extends React.Component {
                 {audioSources}
 
                 <TrackSelector selectedTrack={this.state.selectedTrack} changeTrack={this.changeTrack} tracks={this.state.audioTracks}/>
-
-                <button onClick={this.playAudio}>
-                    Play!
-                </button>
+                <AudioPlayerControls playAudio={this.playAudio}/>
             </div>
         )
     }

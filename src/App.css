@@ -24,6 +24,15 @@
   color: white;
 }
 
+.audioPlayer {
+  color: black;
+  margin-top: 50px;
+}
+
+.audioPlayerControls {
+  margin-top: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }
