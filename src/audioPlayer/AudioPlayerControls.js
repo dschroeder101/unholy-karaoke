@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
 class AudioPlayerControls extends React.Component {
     constructor(props) {
@@ -8,13 +9,21 @@ class AudioPlayerControls extends React.Component {
     render() {
         return (
             <div className="audioPlayerControls">
-            <button className="audioPlayerBtn" onClick={this.props.playAudio}>
-                Play!
-            </button>
-            <button className="audioPlayerBtn">
-                Surprise me...
-            </button>
-        </div>
+                <Container>
+                    <Row>
+                        <Col>
+                            <button className="audioPlayerBtn playBtn" onClick={this.props.playAudio}>
+                                Play track!
+                            </button>
+                        </Col>
+                        <Col>
+                            <button className="audioPlayerBtn surpriseBtn" onClick={this.props.playRandom}>
+                                Surprise me...
+                            </button>   
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         )
     }
 }

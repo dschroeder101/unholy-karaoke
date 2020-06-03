@@ -33,6 +33,10 @@
   margin-top: 20px;
 }
 
+.audioPlayerControls .audioPlayerBtn {
+  padding:7px;
+}
+
 .App-link {
   color: #61dafb;
 }

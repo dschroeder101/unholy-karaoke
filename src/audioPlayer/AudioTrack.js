@@ -4,21 +4,15 @@ import { Container, Row, Col } from 'react-bootstrap'
 class AudioTrack extends React.Component {
     constructor(props) {
         super(props);
-
-        this.image = this.props.image;
-        this.artist = this.props.artist;
-        this.trackName = this.props.trackName;
     }
 
     render() {
-        return(
+        return (
             <Container fluid>
-                <Col>
-                    <Row>
-                        <img src={this.image}></img>
-                        <h3>{this.trackName} - {this.artist}</h3>
-                    </Row>
-                </Col>
+                <Row>
+                    <img src={this.props.image}></img>
+                    <h3>{this.props.trackName} - {this.props.artist}</h3>
+                </Row>
             </Container>
         )
     }

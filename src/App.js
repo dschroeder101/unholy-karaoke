@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         <h1>Welcome to unholy-karaoke</h1>
-        <h3>All the hits, now in one convenient media player.</h3>
+        <h3>All the hits you love, now in one convenient media player.</h3>
         <div className="audioPlayer">
           <Jumbotron>
             <AudioPlayer />
