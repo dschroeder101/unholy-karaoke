@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 
 class AudioTrack extends React.Component {
     constructor(props) {
@@ -10,7 +10,7 @@ class AudioTrack extends React.Component {
         return (
             <Container fluid>
                 <Row>
-                    <img src={this.props.image}></img>
+                    <img src={this.props.image} alt={"Speaker"}></img>
                     <h3>{this.props.trackName} - {this.props.artist}</h3>
                 </Row>
             </Container>
