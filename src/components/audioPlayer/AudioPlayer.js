@@ -15,7 +15,8 @@ class AudioPlayer extends React.Component {
                 ["Thunderstruck", "AC/DC", Bark],
                 ["Daughter", "Pearl Jam", Drip],
                 ["How You Remind Me", "Nickelback", Glass],
-                ["Billie Jean", "Michael Jackson", Sonar]
+                ["Billie Jean", "Michael Jackson", Sonar],
+                ["Highway to Hell", "AC/DC", Sonar]
             ],
             selectedTrack: "Thunderstruck"
         };
