@@ -11,6 +11,7 @@ class TrackSelector extends React.Component {
         const btns = this.props.tracks.map(([trackName, artist]) => {
             return (
                 <ListGroup.Item 
+                action
                 onClick={(e) => this.props.changeTrack(trackName)}
                 className={this.props.selectedTrack === trackName?"active":""}>
                     <AudioTrack trackName={trackName} artist={artist} />

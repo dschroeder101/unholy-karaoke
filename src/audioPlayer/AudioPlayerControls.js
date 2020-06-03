@@ -12,11 +12,6 @@ class AudioPlayerControls extends React.Component {
                 <Container>
                     <Row>
                         <Col>
-                            <button className="audioPlayerBtn playBtn" onClick={this.props.playAudio}>
-                                Play track!
-                            </button>
-                        </Col>
-                        <Col>
                             <button className="audioPlayerBtn surpriseBtn" onClick={this.props.playRandom}>
                                 Surprise me...
                             </button>   
