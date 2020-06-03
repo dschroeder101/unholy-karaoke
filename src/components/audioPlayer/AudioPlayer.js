@@ -22,12 +22,16 @@ class AudioPlayer extends React.Component {
         };
 
         this.playAudio = () => {
-            console.log("Playing track: " + this.state.selectedTrack +"...")
             this[this.state.selectedTrack].play();
         }
 
+        this.stopAudio = () => {
+            this[this.state.selectedTrack].pause();
+            this[this.state.selectedTrack].currentTime = 0;
+        }
+
         this.changeTrack = trackName => {
-            console.log("Changing track to " + trackName + "...")
+            this.stopAudio();
             this.setState({
                 selectedTrack: trackName
             },
@@ -37,7 +41,7 @@ class AudioPlayer extends React.Component {
         }
         
         this.playRandom = () => {
-            console.log("Playing random track...");
+            this.stopAudio();
             const [trackName] = this.state.audioTracks[Math.floor(Math.random() * (this.state.audioTracks.length))];
 
             if(trackName === this.state.selectedTrack) {
