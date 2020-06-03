@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AudioPlayer from './audioPlayer/AudioPlayer';
+import AudioPlayer from './components/audioPlayer/AudioPlayer';
 import { Jumbotron } from 'react-bootstrap';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Jumbotron>
             <AudioPlayer />
           </Jumbotron>
+          <Footer />
         </div>
       </div>
     </div>
