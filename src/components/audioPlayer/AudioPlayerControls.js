@@ -16,6 +16,11 @@ class AudioPlayerControls extends React.Component {
                                 Surprise me...
                             </button>   
                         </Col>
+                        <Col xs={7}>
+                            <button className="audioPlayerBtn stopButton" onClick={this.props.stopAudio}>
+                               OMG make it stop...
+                            </button>
+                        </Col>
                     </Row>
                 </Container>
             </div>

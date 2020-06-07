@@ -1,8 +1,9 @@
 import React from 'react';
-import Bark from './audio/bark.ogg';
-import Drip from './audio/drip.ogg';
-import Glass from './audio/glass.ogg';
-import Sonar from './audio/sonar.ogg';
+
+import Thunderstruck from './audio/thunderstruck.ogg';
+import Daughter from './audio/daughter.ogg';
+import BillieJean from './audio/billiejean.ogg';
+import Nickelback from './audio/nickelback.ogg';
 import TrackSelector from './TrackSelector'
 import AudioPlayerControls from './AudioPlayerControls'
 
@@ -12,11 +13,10 @@ class AudioPlayer extends React.Component {
 
         this.state = {
             audioTracks: [
-                ["Thunderstruck", "AC/DC", Bark],
-                ["Daughter", "Pearl Jam", Drip],
-                ["How You Remind Me", "Nickelback", Glass],
-                ["Billie Jean", "Michael Jackson", Sonar],
-                ["Highway to Hell", "AC/DC", Sonar]
+                ["Thunderstruck", "AC/DC", Thunderstruck],
+                ["Daughter", "Pearl Jam", Daughter],
+                ["How You Remind Me", "Nickelback", Nickelback],
+                ["Billie Jean", "Michael Jackson", BillieJean]
             ],
             selectedTrack: "Thunderstruck"
         };
@@ -71,7 +71,7 @@ class AudioPlayer extends React.Component {
             <div>
                 {audioSources}
                 <TrackSelector selectedTrack={this.state.selectedTrack} changeTrack={this.changeTrack} tracks={this.state.audioTracks}/>
-                <AudioPlayerControls playRandom={this.playRandom}/>
+                <AudioPlayerControls playRandom={this.playRandom} stopAudio={this.stopAudio}/>
             </div>
         )
     }

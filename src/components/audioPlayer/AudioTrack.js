@@ -10,7 +10,6 @@ class AudioTrack extends React.Component {
         return (
             <Container fluid>
                 <Row>
-                    <img src={this.props.image} alt={"Speaker"}></img>
                     <h3>{this.props.trackName} - {this.props.artist}</h3>
                 </Row>
             </Container>

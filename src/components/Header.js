@@ -6,7 +6,7 @@ class Header extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <div>
                 <h1>Welcome to unholy-karaoke</h1>
                 <h3>All the hits you love, now in one convenient media player.</h3>
